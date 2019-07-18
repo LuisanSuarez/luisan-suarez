@@ -166,11 +166,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project-screenshots img {
   width: 27vw;
   height: auto;
+  margin-top: 30px;
 }
 
 #####################
