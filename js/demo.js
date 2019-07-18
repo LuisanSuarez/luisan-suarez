@@ -19,7 +19,10 @@
     target = { x: width / 2, y: height / 2 };
 
     largeHeader = document.getElementById("large-header");
+    welcome = document.getElementById("welcome");
+
     largeHeader.style.height = height + "px";
+    welcome.style.height = height + "px";
 
     canvas = document.getElementById("demo-canvas");
     canvas.width = width;
@@ -115,6 +118,7 @@
     width = window.innerWidth;
     height = window.innerHeight;
     largeHeader.style.height = height + "px";
+    welcome.style.height = height + "px";
     canvas.width = width;
     canvas.height = height;
   }
