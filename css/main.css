@@ -175,6 +175,24 @@ body {
   margin-top: 30px;
 }
 
+.boring-stuff h1 {
+  display: inline-block;
+  width: 100%;
+}
+
+.boring-stuff .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.boring-stuff .links img {
+  height: 15vw;
+  width: 15vw;
+  border-radius: 7%;
+}
+
 #####################
   Clear
   Fix
