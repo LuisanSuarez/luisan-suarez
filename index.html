@@ -16,6 +16,7 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
     <script src="./js/demo.js" async></script>
+    <script src="./js/main.js" async></script>
     <script language="JavaScript">
       function testResults (form) {
           var TestVar = form.inputbox.value;
@@ -39,13 +40,29 @@
     </section>
     <!-- <div style='clear:both;'></div> -->
 
-    <section class="sidebar">
-      <div class="sidebar-icons">
-        <a href="#about" class="about-icon" title="about me"></a>
-        <a href="#projects" class="projects-icon" title="my projects"></a>
-        <a href="#boring-stuff" class="links-icon" title="links to formal stuff"></a>
-        <a href="#contact" class="contact-icon" title="get in touch!"></a>
-        <a href="#welcome" class="welcome-icon" title="awesome welcome animation"></a>
+    <section class="sidebar" id="sidebar">
+      <div class="hamburger-icon" onclick="toggleSiderbarOpen()" ></div>
+      <div class="sidebar-navigation" >
+        <div class="about-navigate navigate" >
+          <a href="#about" class="about-icon" title="about me"></a>
+          <a href="#about" id="about-text" class="navigate-text" style="display: none;">about me</a>
+        </div>
+        <div class="projects-navigate navigate" >
+          <a href="#projects" class="projects-icon" title="my projects"></a>
+          <a href="#projects" id="projects-text" class="navigate-text" style="display: none;">projects</a>
+        </div>
+        <div class="about-navigate navigate" >
+          <a href="#boring-stuff" class="links-icon" title="links to formal stuff"></a>
+          <a href="#boring-stuff" id="links-text" class="navigate-text" style="display: none;">links</a>
+        </div>
+        <div class="about-navigate navigate" >
+          <a href="#contact" class="contact-icon" title="get in touch!"></a>
+          <a href="#contact" id="contact-text" class="navigate-text" style="display: none;">contact</a>
+        </div>
+        <div class="about-navigate navigate" >
+          <a href="#welcome" class="welcome-icon" title="awesome welcome animation"></a>
+          <a href="#welcome" id="welcome-text" class="navigate-text" style="display: none;">back to top</a>
+        </div>
       </div>
     </section>
 
@@ -94,13 +111,13 @@
       <h1>Links to all the Boring Stuff</h1>
       <div class="links">
         <a href="https://www.linkedin.com/in/luis-angel-suarez-2b351767/" target="_blank">
-          <img src="./img/linkedin.png" alt="luisan's linkedin profile" />
+          <img src="./img/boring_stuff/linkedin.png" alt="luisan's linkedin profile" />
         </a>
         <a href="https://github.com/luisansuarez" target="_blank">
-          <img src="./img/github.png" alt="luisan's github profile" />
+          <img src="./img/boring_stuff/github.png" alt="luisan's github profile" />
         </a>
         <a href="https://resume.creddle.io/resume/576s5e3h5aq" target="_blank">
-          <img src="./img/resume.png" alt="luisan's resume" />
+          <img src="./img/boring_stuff/resume.png" alt="luisan's resume" />
         </a>
       </div>
     </section>

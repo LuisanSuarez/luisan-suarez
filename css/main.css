@@ -97,8 +97,6 @@ body {
   background-size: cover;
   background-color: black;
   color: white;
-  /* margin-left: 76px; */
-  /* max-width: calc(100vw - 76px); */
 }
 
 section {
@@ -106,13 +104,11 @@ section {
   min-height: 590px;
   border-top: 1px white solid;
   border-bottom: 1px white solid;
-  /* border: 1px solid orange; */
   margin-left: 75px;
 
 }
 
 .welcome {
-  /* overflow: hidden; */
   margin-left: 0px;
   max-width: 100%;
 }
@@ -125,16 +121,36 @@ section {
   z-index: 1000;
   height: 100vh;
   width: 75px;
-  /* background-color: white; */
   background-color: rgb(255, 255, 255, 0.2);
   border: none;
   margin: 0;
-
-  /* display: none; */
+  transition: all .3s ease;
 }
 
-.sidebar-icons {
-  margin-top: 55px;
+.sidebar:hover {
+  background-color: rgb(100, 100, 100, 0.75);
+}
+
+.sidebar.open{
+  width: 175px;
+  background-color: rgb(100, 100, 100, 0.75);
+}
+
+.hamburger-icon {
+  margin-bottom: 30px;
+  background: url("../img/sidebar/hamburger_icon.png");
+  height: 35px;
+  width: 35px;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 30px 0;
+  position: absolute;
+  right: 20px
+}
+
+.sidebar-navigation {
+  margin-top: 95px;
 }
 
 .sidebar a {
@@ -144,11 +160,48 @@ section {
   background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 35px auto;
+  margin: 35px 12.5px;
+  position: absolute;
+  transition: all .15s ease;
+  
 }
+
+.sidebar a:hover {
+  background-size: 100%;
+}
+
+.navigate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.projects-navigate {
+  margin-top: 30px;
+}
+
 
 .about-icon {
   background: url("../img/sidebar/about-icon-white.png")
+}
+
+
+.navigate .navigate-text {
+  color: white;
+  font-size: 16px;
+  width: 75px;
+  height: auto;
+  text-decoration: none;
+  margin-right: 20px;
+  position: absolute;
+  left: 68px;
+  transition: all .15s ease;
+}
+
+.navigate .navigate-text:hover {
+  font-size: 17px;
+  width: 100px;
 }
 
 .projects-icon {
@@ -230,7 +283,6 @@ section {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  display: none;
 }
 
 .project-screenshots img {
@@ -267,28 +319,23 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 550px;
-  width: 100vw;
-  margin-left: -75px;
+  width: 100%;
 }
 
 .parallax-1 {
   background-image: url(../img/parallax/pillars_of_creation.jpg);
-  /* min-height: 550px; */
 }
 
 .parallax-2 {
   background-image: url(../img/parallax/milky_way.jpg);
-  /* min-height: 550px; */
 }
 
 .parallax-3 {
   background-image: url(../img/parallax/bubble_nebula.jpg);
-  /* min-height: 550px; */
 }
 
 .parallax-4 {
   background-image: url(../img/parallax/m57.jpg);
-  /* min-height: 550px; */
 }
 
 #####################
