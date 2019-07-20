@@ -40,18 +40,18 @@
     <!-- <div style='clear:both;'></div> -->
 
     <section class="sidebar">
-      <ul>
-        <a>About</a>
-        <a>Projects</a>
-        <a>Links</a>
-        <a>Contact</a>
-        <a>Back to Top</a>
-      </ul>
+      <div class="sidebar-icons">
+        <a href="#about" class="about-icon" title="about me"></a>
+        <a href="#projects" class="projects-icon" title="my projects"></a>
+        <a href="#boring-stuff" class="links-icon" title="links to formal stuff"></a>
+        <a href="#contact" class="contact-icon" title="get in touch!"></a>
+        <a href="#welcome" class="welcome-icon" title="awesome welcome animation"></a>
+      </div>
     </section>
 
     <div class="parallax-1" ></div>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="headshot" alt="headshot of Luisan"></div>
       <div class="about-text">
         <h1>
@@ -76,7 +76,7 @@
 
     <div class="parallax-2" ></div>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <h1>Projects</h1>
       <div class="project-screenshots">
         <img src="./img/list-monkey.png" alt="list monkey" />
@@ -90,7 +90,7 @@
 
     <div class="parallax-3" ></div>
 
-    <section class="boring-stuff">
+    <section id="boring-stuff" class="boring-stuff">
       <h1>Links to all the Boring Stuff</h1>
       <div class="links">
         <a href="https://www.linkedin.com/in/luis-angel-suarez-2b351767/" target="_blank">
@@ -107,7 +107,7 @@
     
     <div class="parallax-4" ></div>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <form NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <br>
         <input TYPE="text" NAME="inputbox" VALUE=""><p>
           <input TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
