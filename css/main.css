@@ -84,6 +84,10 @@ table {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   height: 80vh;
   min-height: 590px;
