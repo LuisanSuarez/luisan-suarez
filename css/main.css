@@ -263,22 +263,22 @@ body {
 }
 
 .parallax-1 {
-  background-image: url(../img/pillars_of_creation.jpg);
+  background-image: url(../img/parallax/pillars_of_creation.jpg);
   /* min-height: 550px; */
 }
 
 .parallax-2 {
-  background-image: url(../img/milky_way.jpg);
+  background-image: url(../img/parallax/milky_way.jpg);
   /* min-height: 550px; */
 }
 
 .parallax-3 {
-  background-image: url(../img/bubble_nebula.jpg);
+  background-image: url(../img/parallax/bubble_nebula.jpg);
   /* min-height: 550px; */
 }
 
 .parallax-4 {
-  background-image: url(../img/m57.jpg);
+  background-image: url(../img/parallax/m57.jpg);
   /* min-height: 550px; */
 }
 
