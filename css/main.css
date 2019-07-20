@@ -86,7 +86,8 @@ table {
 
 section {
   height: 80vh;
-  border: 1px white solid;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
 }
 
 body {
@@ -191,6 +192,38 @@ body {
   height: 15vw;
   width: 15vw;
   border-radius: 7%;
+}
+
+
+/* Parallax Images */
+.parallax-1, .parallax-2, .parallax-3, .parallax-4 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+}
+
+.parallax-1 {
+  background-image: url(../img/pillars_of_creation.jpg);
+  /* min-height: 550px; */
+}
+
+.parallax-2 {
+  background-image: url(../img/milky_way.jpg);
+  /* min-height: 550px; */
+}
+
+.parallax-3 {
+  background-image: url(../img/bubble_nebula.jpg);
+  /* min-height: 550px; */
+}
+
+.parallax-4 {
+  background-image: url(../img/m57.jpg);
+  /* min-height: 550px; */
 }
 
 #####################

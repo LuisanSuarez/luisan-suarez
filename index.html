@@ -16,6 +16,12 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
     <script src="./js/demo.js" async></script>
+    <script language="JavaScript">
+      function testResults (form) {
+          var TestVar = form.inputbox.value;
+          console.log("You typed: " + TestVar);
+      }
+      </script>
   </head>
   <!-- &nbsp; -->
   <body>
@@ -40,6 +46,8 @@
         quedemos que quede arrriba encima de todo, que lo tape. nada de estar moviendo el main content
     </section>
 
+    <div class="parallax-1" ></div>
+
     <section class="about">
       <div class="headshot" alt="headshot of Luisan"></div>
       <div class="about-text">
@@ -62,7 +70,9 @@
         </div>
       </div>
     </section>
-    
+
+    <div class="parallax-2" ></div>
+
     <section class="projects">
       <h1>Projects</h1>
       <div class="project-screenshots">
@@ -74,6 +84,8 @@
         <img src="./img/list-monkey.png" alt="notes" />
       </div>
     </section>
+
+    <div class="parallax-3" ></div>
 
     <section class="boring-stuff">
       <h1>Links to all the Boring Stuff</h1>
@@ -89,8 +101,16 @@
         </a>
       </div>
     </section>
+    
+    <div class="parallax-4" ></div>
 
-    <section class="contact"></section>
+    <section class="contact">
+      <form NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <br>
+        <input TYPE="text" NAME="inputbox" VALUE=""><p>
+          <input TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)">
+        </p>
+        </form>
+    </section>
 
     <footer></footer>
   </body>
