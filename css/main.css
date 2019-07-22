@@ -88,8 +88,8 @@ html {
   scroll-behavior: smooth;
 }
 
-#demo-canvas {
-  /* max-width: 900px !important; */
+.demo .large-header {
+  z-index: 10;
 }
 
 body {
@@ -114,16 +114,17 @@ section {
 }
 
 .sidebar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  z-index: 1000;
+  z-index: 1;
   height: 100vh;
   width: 75px;
   background-color: rgb(255, 255, 255, 0.2);
   border: none;
   margin: 0;
+  margin-top: -101vh;
   transition: all .3s ease;
 }
 
