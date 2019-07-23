@@ -112,12 +112,12 @@ table {
   border: 1px solid gray;
   padding: 1%;
   border-radius: 17px;
-  animation: upsrcoll 1s 1;
+  animation: upsrcoll 2.5s 1;
   text-decoration: none;
 }
 
 @keyframes upsrcoll {
-  0% {top: 103%}
+  0% {top: 123%}
   100% {top: 85.8%}
 }
 
@@ -234,6 +234,30 @@ section {
   margin-top: 30px;
 }
 
+.ready-button {
+  position: sticky;
+  display: block;
+  top: 3%;
+  left: 94.5%;
+  text-decoration: none;
+  color: white;
+  width: 5%;
+  border: 1px solid white;
+  text-align: center;
+  padding: 0.4%;
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.patch {
+  height: 95px;
+  width: 42px;
+  background-color: black;
+  position: sticky;
+  top: 2%;
+  left: 94%;
+}
+
 .navigate .navigate-text {
   color: white;
   font-size: 16px;
@@ -304,22 +328,19 @@ section {
   height: 30vw;
   width: 30vw;
   border-radius: 50%;
-  margin-top: 3%;
+  margin: 2% 0 3%;
 }
 
 .technologies {
   display: flex;
   flex-wrap: wrap;
-}
-
-.technologies h3 {
-  width: 50vw;
+  width: 100%;
 }
 
 .technologies-logos {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .technologies img {
@@ -334,7 +355,7 @@ section {
 .projects h1 {
   font-size: 48px;
   display: block;
-  margin: 0 auto 0.32em;
+  margin: 0 auto 0.67em;
 }
 
 .project-screenshots {
@@ -384,7 +405,8 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 550px;
+  min-height: 325px;
+  max-height: 380px;
   width: 100%;
 }
 

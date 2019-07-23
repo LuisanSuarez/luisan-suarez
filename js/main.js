@@ -19,6 +19,11 @@ function toggleSiderbarOpen() {
             contactText.style.display = "none";
             linksText.style.display = "none";
             welcomeText.style.display = "none";
-        }, 500)
-    }
-  }
+        }, 500);
+    };
+  };
+
+function hide() {
+    var element = document.getElementById("ready-button");
+    element.style.display = "none";
+}
