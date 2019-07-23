@@ -41,6 +41,10 @@ table {
 	border-spacing: 0;
 } */
 
+* {
+  box-sizing: border-box;
+}
+
 .large-header {
   position: relative;
   width: 100%;
@@ -62,7 +66,7 @@ table {
   padding: 0;
   color: #f9f1e9;
   text-align: center;
-  top: 50%;
+  top: 47%;
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
@@ -76,6 +80,50 @@ table {
 
 .main-title .thin {
   font-weight: 200;
+}
+
+.subtitle {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 57%;
+  left: 49.4%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 2.8rem;
+  font-weight: 100
+}
+
+.intro-navigate-button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 86%;
+  left: 48.75%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 1.2rem;
+  font-weight: 100;
+  z-index: 10;
+  border: 1px solid gray;
+  padding: 1%;
+  border-radius: 17px;
+  animation: upsrcoll 1s 1;
+  text-decoration: none;
+}
+
+@keyframes upsrcoll {
+  0% {top: 103%}
+  100% {top: 85.8%}
+}
+
+.intro-navigate-button:hover {
+  transition: all .5s ease;
+  background-color: rgba(167, 167, 167, 0.2)
 }
 
 @media only screen and (max-width: 768px) {
@@ -100,8 +148,7 @@ body {
 }
 
 section {
-  height: 80vh;
-  min-height: 590px;
+  min-height: 100vh;
   border-top: 1px white solid;
   border-bottom: 1px white solid;
   margin-left: 75px;
@@ -187,12 +234,6 @@ section {
   margin-top: 30px;
 }
 
-
-.about-icon {
-  background: url("../img/sidebar/about-icon-white.png")
-}
-
-
 .navigate .navigate-text {
   color: white;
   font-size: 16px;
@@ -208,6 +249,10 @@ section {
 .navigate .navigate-text:hover {
   font-size: 17px;
   width: 100px;
+}
+
+.about-icon {
+  background: url("../img/sidebar/about-icon-white.png")
 }
 
 .projects-icon {
@@ -232,7 +277,7 @@ section {
 .boring-stuff,
 .contact {
   display: flex;
-  padding: 6%;
+  padding: 4% 6% 0;
   flex-wrap: wrap;
 }
 
@@ -240,8 +285,16 @@ section {
 }
 
 .about-text {
-  margin-left: 10%;
+  margin-left: 9%;
   max-width: 50%;
+
+}
+.about h1 {
+  font-size: 45px;
+}
+
+.about p {
+  font-size: 18px;
 }
 
 .headshot {
@@ -279,8 +332,9 @@ section {
 }
 
 .projects h1 {
-  width: 100%;
-  display: inline-block;
+  font-size: 48px;
+  display: block;
+  margin: 0 auto 0.32em;
 }
 
 .project-screenshots {
@@ -292,9 +346,15 @@ section {
 }
 
 .project-screenshots img {
-  width: 27vw;
+  width: 26vw;
   height: auto;
-  margin-top: 30px;
+  margin: 33px 0;
+  transition: all 0.1s ease;
+}
+
+.project-screenshots img:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.08);
 }
 
 .boring-stuff h1 {
