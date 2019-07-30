@@ -126,7 +126,7 @@ table {
   background-color: rgba(167, 167, 167, 0.2)
 }
 
-@media only screen and (max-width: 768px) {
+@media  screen and (max-width: 768px) {
   .demo .main-title {
     font-size: 3em;
   }
@@ -216,7 +216,6 @@ section {
   margin: 35px 12.5px;
   position: absolute;
   transition: all .15s ease;
-  
 }
 
 .sidebar a:hover {
@@ -426,22 +425,68 @@ section {
   background-image: url(../img/parallax/m57.jpg);
 }
 
-#####################
-  Clear
-  Fix
-  #####################
-  #####################
-  Clear
-  Fix
-  #####################
-  #####################
-  Clear
-  Fix
-  #####################
-  #####################
-  Clear
-  Fix
-  #####################
+/* #####################
+Media Queries
+##################### */
+
+@media screen  and (max-width: 480px) {
+
+  .main-title {
+    color: white;
+    top: 35%;
+  }
+
+  .subtitle {
+    font-size: 2.2rem;
+    top: 52%;
+  }
+
+  .intro-navigate-button {
+    padding: 5%;
+  }
+
+  .project-screenshots {
+    justify-content: center
+  }
+
+  .project-screenshots img {
+    width: 50vw;
+  }
+
+  .boring-stuff h1 {
+    display: block;
+    /* height: 30%; */
+  }
+
+  .boring-stuff .links {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20%;
+  }
+
+  .boring-stuff .links a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .boring-stuff .links img {
+    width: 30vw;
+    height: 30vw;
+    flex-direction: column;
+    margin: 0 auto 15%;
+  }
+
+  .technologies-logos {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .technologies img {
+    margin: 20px 10px;
+  }
+}
+
+
   .clearfix:after {
   content: ".";
 
