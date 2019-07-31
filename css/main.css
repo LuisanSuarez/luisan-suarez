@@ -539,17 +539,40 @@ Media Queries
   .demo .main-title {
     color: white;
     top: 35%;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .subtitle {
-    font-size: 2.2rem;
-    top: 52%;
+    font-size: 1.6rem;
+    top: 51%;
   }
 
   .intro-navigate-button {
-    padding: 5%;
+    padding: 3%;
     font-size: 1.2rem;
+    background-color: rgba(167, 167, 167, 0.2)
+  }
+
+  .sidebar {
+    width: 55px;
+  }
+
+  .section {
+    margin-left: 55px;
+  }
+
+  .projects h1 {
+    font-size: 2.4rem;
+  }
+
+  .hamburger-icon {
+    right: 9px;
+  }
+
+  .sidebar a {
+    height: 40px;
+    width: 40px;
+    margin: 40px 7px;
   }
 
   .project-screenshots {
@@ -557,7 +580,8 @@ Media Queries
   }
 
   .project-screenshots img {
-    width: 50vw;
+    width: 60vw;
+    height: 34vw;
   }
 
   .boring-stuff h1 {
@@ -569,7 +593,7 @@ Media Queries
   .boring-stuff .links {
     flex-direction: column;
     justify-content: center;
-    margin-top: -20%;
+    margin-top: 0;
   }
 
   .boring-stuff .links a {
@@ -578,15 +602,15 @@ Media Queries
   }
 
   .boring-stuff .links img {
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     flex-direction: column;
-    margin: 0 auto 15%;
+    margin: 0 auto 14%;
   }
 
   .technologies-logos {
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .technologies img {
@@ -599,6 +623,13 @@ Media Queries
     padding: 10% 0;
   }
 
+  .about h1 {
+    font-size: 2.2rem;
+  }
+  .about p {
+    font-size: 15px;
+  }
+
   .headshot {
     height: 50vw;
     width: 50vw;
@@ -606,7 +637,7 @@ Media Queries
 
   .about-text {
     max-width: 75%;
-    margin-bottom:  10%;
+    margin-bottom:  5%;
   }
 }
 
