@@ -160,9 +160,10 @@ section {
 
 }
 
-.welcome {
+#welcome {
   margin-left: 0px;
   max-width: 100%;
+  border: none;
 }
 
 .sidebar {
@@ -327,7 +328,7 @@ section {
 
 .headshot {
   background-position: 50% 38%; /* Center the image */
-  background-image: url("../img/headshot.jpg");
+  background-image: url("https://i.imgur.com/EjGcJjH.jpg");
   background-size: 135%;
   height: 30vw;
   width: 30vw;
@@ -372,13 +373,6 @@ section {
   margin-bottom: 3%;
   perspective: 1000px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -553,6 +547,7 @@ section {
 
 .parallax-1 {
   background-image: url(../img/parallax/pillars_of_creation.jpg);
+  margin-top: -4px;
 }
 
 .parallax-2 {
@@ -572,7 +567,7 @@ Media Queries
 ##################### */
 
 @media screen and (max-width: 1000px) {
-  
+
   .screenshots {
     margin-left: 2%;
     margin-right: 2%;
@@ -785,7 +780,7 @@ Media Queries
     width: 55px;
   }
 
-  .section {
+  section {
     margin-left: 55px;
   }
 
@@ -797,14 +792,38 @@ Media Queries
     right: 9px;
   }
 
+  .sidebar-navigation {
+    margin-top: 76px;
+  }
+
   .sidebar a {
     height: 40px;
     width: 40px;
     margin: 40px 7px;
   }
 
+  .navigate {
+    margin-bottom: 80px;
+  }
+
   .project-screenshots {
-    justify-content: center
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .screenshots {
+    width: 64vw;
+    height: 34vw;
+  }
+
+  .screenshot-inner {
+    position: relative;
+    width: 60vw;
+    height: 34vw;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
   }
 
   .project-screenshots img {
