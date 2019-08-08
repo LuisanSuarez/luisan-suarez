@@ -15,7 +15,9 @@
 
   function initHeader() {
     width = window.innerWidth;
-    height = window.innerHeight;
+    console.log("height:", height)
+    height = height ? height : window.innerHeight
+    console.log("height 2:", height)
     target = { x: width / 2, y: height / 2 };
 
     largeHeader = document.getElementById("large-header");
@@ -117,10 +119,10 @@
   function resize() {
     width = window.innerWidth;
     height = window.innerHeight;
-    largeHeader.style.height = height + "px";
-    welcome.style.height = height + "px";
+    // largeHeader.style.height = height + "px";
+    // welcome.style.height = height + "px";
     canvas.width = width;
-    canvas.height = height;
+    // canvas.height = height;
   }
 
   // animation
