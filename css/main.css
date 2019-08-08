@@ -759,6 +759,9 @@ Media Queries
 
 @media screen  and (max-width: 480px) {
 
+  #welcome {
+    min-height: 0;
+  }
   .demo .main-title {
     color: white;
     top: 35%;
@@ -814,21 +817,40 @@ Media Queries
 
   .screenshots {
     width: 64vw;
-    height: 34vw;
+    height: 35vw;
   }
 
   .screenshot-inner {
     position: relative;
-    width: 60vw;
-    height: 34vw;
+    width: 64vw;
+    height: 35vw;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
 
+
+  .screenshot-back h1 {
+    font-size: 5.4vw;
+  }
+
+  .screenshot-back h3 {
+    font-size: 3.2vw;
+  }
+
+  .screenshot-back p {
+    font-size: 2.6vw;
+  }
+
   .project-screenshots img {
     width: 60vw;
     height: 34vw;
+  }
+
+
+  .tech-stack img {
+    height: 5vw;
+    width: 5vw;
   }
 
   .boring-stuff h1 {
