@@ -84,13 +84,14 @@
       <h1>Projects</h1>
       <div class="project-screenshots">
 
-          <a href="https://www.listmonkey.net/" class="screenshots">
-            <div class="screenshot-inner">
+          <div class="screenshots" onclick="this.classList.toggle('hover')">
+          
+            <div class="screenshot-inner" >
               <div class="screenshot-front">
                 <img src="./img/projects/list-monkey.jpg" alt="Avatar" >
               </div>
               <div class="screenshot-back">
-                <h1>List Monkey</h1> 
+                <h1><a href="https://www.listmonkey.net/" onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')" >List Monkey</a></h1> 
                 <h3>Capstone Project</h3> 
                 <p>Create groups, add friends, and assign them tasks to keep track of responsibilities</p>
                 <div class="tech-stack">
@@ -103,15 +104,21 @@
                 </div>
               </div>
             </div>
-          </a>
+          </div>
 
-          <a href="https://luisan-lambda-times.netlify.com/" class="screenshots">
+          <div class="screenshots" onclick="this.classList.toggle('hover')">
+          
             <div class="screenshot-inner">
               <div class="screenshot-front">
                 <img src="./img/projects/lambda-times.png" alt="Avatar" >
               </div>
               <div class="screenshot-back">
-                <h1>Lambda Times</h1> 
+                <h1>
+                  <a href="https://luisan-lambda-times.netlify.com/" 
+                    onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')" >
+                    Lambda Times
+                  </a>
+                </h1> 
                 <h3>React Module</h3> 
                 <p>SPA news site. Filter by topic. Get SF's updated weather data</p>
                 <div class="tech-stack">
@@ -122,15 +129,21 @@
                 </div>
               </div>
             </div>
-          </a>
+          </div>
 
-          <a href="https://luisan-notes.netlify.com/" class="screenshots">
+          <div class="screenshots" onclick="this.classList.toggle('hover')">
+          
             <div class="screenshot-inner">
               <div class="screenshot-front">
                 <img src="./img/projects/notes-app.png" alt="Avatar" >
               </div>
               <div class="screenshot-back">
-                <h1>Notes App</h1> 
+                <h1>
+                  <a href="https://luisan-notes.netlify.com/"
+                    onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')" >
+                    Notes App
+                  </a>
+                </h1> 
                 <h3>BE + FE Project Weeks</h3> 
                 <p>Create, view, edit, and delete my notes to make sure I forget nothing</p>
                 <div class="tech-stack">
@@ -143,15 +156,21 @@
                 </div>
               </div>
             </div>
-          </a>
+          </div>
 
-          <a href="https://luisansuarez.github.io/S-J-Architects" class="screenshots">
+          <div class="screenshots" onclick="this.classList.toggle('hover')">
+          
             <div class="screenshot-inner">
               <div class="screenshot-front">
                 <img src="./img/projects/s&j-architects.jpg" alt="Avatar" >
               </div>
               <div class="screenshot-back">
-                <h1>S&J Architects</h1>
+                <h1>
+                  <a href="https://luisansuarez.github.io/S-J-Architects"
+                    onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')">
+                    S&J Architects
+                  </a>
+                </h1>
                 <h3>UI Project Week</h3>
                 <p>Demo website for architectural firm. Fun carousel, few hidden animations</p>
                 <div class="tech-stack">
@@ -162,15 +181,21 @@
                 </div>
               </div>
             </div>
-          </a>
+          </div>
 
-          <a href="https://redux-todo-luisan.netlify.com/" class="screenshots">
+          <div class="screenshots" onclick="this.classList.toggle('hover')" >
+          
             <div class="screenshot-inner">
               <div class="screenshot-front">
                 <img src="./img/projects/todos.jpg" alt="Avatar" >
               </div>
               <div class="screenshot-back">
-                <h1>Todos</h1>
+                <h1>
+                  <a href="https://redux-todo-luisan.netlify.com/" 
+                    onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')">
+                    Todos
+                  </a>
+                </h1>
                 <h3>Redux Module</h3>
                 <p>Playing around with Redux. Write notes, mark as completed, filter them, delete in bulk</p>
                 <div class="tech-stack">
@@ -179,7 +204,7 @@
                 </div>
               </div>
             </div>
-          </a>
+          </div>
 
         <!-- <a target="_blank" href="https://www.listmonkey.net/">
           <img class="project-screehshot-front" src="./img/projects/list-monkey.jpg" alt="list monkey" />
