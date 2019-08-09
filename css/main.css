@@ -1,46 +1,3 @@
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} */
-
 * {
   box-sizing: border-box;
 }
@@ -448,13 +405,23 @@ section {
           transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.screenshots:hover .screenshot-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
 
-/* Position the front and back side */
+
+@media screen and (min-width: 480px) {
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .screenshots:hover .screenshot-inner {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+  /* change background color on click to let users understand it won't flip away */
+  .screenshots.hover .screenshot-inner {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-color: rgba(255, 255, 255, 0.18)
+  }
+
+}
 
 .screenshot-back {
   width: 100%;
@@ -471,13 +438,11 @@ section {
           backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .screenshot-front {
   background-color: #bbb;
   color: black;
 }
 
-/* Style the back side */
 .screenshot-back {
   background-color: rgba(255, 255, 255, 0.12);
   color: white;
@@ -490,6 +455,11 @@ section {
   display: block;
   margin: 0 auto .37em;
   padding-top: 13px;
+}
+
+.screenshot-back h1 a {
+  color: lightblue;
+  text-decoration: underline;
 }
 
 .screenshot-back h3 {
@@ -533,26 +503,6 @@ section {
 #express {
   width: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .boring-stuff h1 {
   display: inline-block;
@@ -614,7 +564,6 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
   min-height: 325px;
   max-height: 380px;
   width: 100%;
@@ -701,14 +650,12 @@ Media Queries
             perspective: 1000px; /* Remove this if you don't want the 3D effect */
     text-decoration: none;
   }
-  
+
   .screenshots img {
     width: 100%;
     height: 100%;
-    /* margin: 33px 0; */
-  
   }
-  
+
   /* This container is needed to position the front and back side */
   .screenshot-inner {
     position: relative;
@@ -722,22 +669,16 @@ Media Queries
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .screenshots:hover .screenshot-inner {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-  
+
   /* Position the front and back side */
-  
+
   .screenshot-back {
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
   }
-  
+
   .screenshot-front {
     position: absolute;
     width: 100%;
@@ -745,40 +686,36 @@ Media Queries
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
   }
-  
-  /* Style the front side (fallback if image is missing) */
+
   .screenshot-front {
     background-color: #bbb;
     color: black;
   }
-  
-  /* Style the back side */
+
   .screenshot-back {
     background-color: rgba(255, 255, 255, 0.12);
     color: white;
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
   }
-  
+
   .screenshot-back h1 {
     font-size: 3.4vw;
     display: block;
     margin: 0 auto .37em;
     padding-top: 13px;
   }
-  
+
   .screenshot-back h3 {
     font-size: 2.2vw;
     margin: 2% auto;
   }
-  
+
   .screenshot-back p {
     font-size: 1.6vw;
     width: 87%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .tech-stack {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -798,7 +735,7 @@ Media Queries
     width: 75%;
     margin: 0 auto;
   }
-  
+
   .tech-stack img {
     height: 2.5vw;
     width: 2.5vw;
@@ -949,6 +886,11 @@ Media Queries
     height: 35vw;
   }
 
+  .screenshots.hover .screenshot-inner {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
   .screenshot-inner {
     position: relative;
     width: 64vw;
@@ -961,7 +903,6 @@ Media Queries
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
-
 
   .screenshot-back h1 {
     font-size: 5.4vw;
