@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 480px) {
+  #list-monkey-subtitle:after {
+    content: <span>"Testing"</span>;
+  }
+}
+
 .large-header {
   position: relative;
   width: 100%;
@@ -881,6 +887,10 @@ Media Queries
 
   }
 
+  .monkey-subtitle {
+    font-size: 2.2vw;
+  }
+
   .screenshots {
     width: 64vw;
     height: 35vw;
@@ -920,7 +930,6 @@ Media Queries
     width: 60vw;
     height: 34vw;
   }
-
 
   .tech-stack img {
     height: 5vw;

@@ -27,3 +27,18 @@ function hide() {
     var element = document.getElementById("ready-button");
     element.style.display = "none";
 }
+
+function addDisclaimer(x) {
+  if (x.matches) { // If media query matches
+    var disclaimer = document.createElement('span');
+    disclaimer.classList.add("monkey-subtitle");
+    disclaimer.innerHTML = "&nbsp&nbsp&nbsp(desktop only)";
+
+    var listMonkeySubtitle = document.getElementById("list-monkey-subtitle");
+    listMonkeySubtitle.appendChild(disclaimer)
+  }
+}
+
+var x = window.matchMedia("(max-width: 480px)")
+addDisclaimer(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
