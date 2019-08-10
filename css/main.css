@@ -644,10 +644,6 @@ Media Queries
     margin-bottom: 13%;
   }
 
-  .project-screenshots img {
-    width: 50vw;
-  }
-
   .screenshots {
     width: 34vw;
     height: auto;
@@ -657,10 +653,6 @@ Media Queries
     text-decoration: none;
   }
 
-  .screenshots img {
-    width: 100%;
-    height: 100%;
-  }
 
   /* This container is needed to position the front and back side */
   .screenshot-inner {
@@ -926,11 +918,6 @@ Media Queries
     font-size: 2.6vw;
   }
 
-  .project-screenshots img {
-    width: 60vw;
-    height: 34vw;
-  }
-
   .tech-stack img {
     height: 5vw;
     width: 5vw;
@@ -1010,6 +997,7 @@ Media Queries
     max-width: 75%;
     margin-bottom:  5%;
   }
+
 }
 
 
