@@ -17,6 +17,7 @@
     width = window.innerWidth;
     console.log("height:", height)
     height = height ? height : window.innerHeight
+    height *= 1.2;
     console.log("height 2:", height)
     target = { x: width / 2, y: height / 2 };
 
@@ -118,7 +119,7 @@
 
   function resize() {
     width = window.innerWidth;
-    height = window.innerHeight;
+    // height = window.innerHeight;
     // largeHeader.style.height = height + "px";
     // welcome.style.height = height + "px";
     canvas.width = width;

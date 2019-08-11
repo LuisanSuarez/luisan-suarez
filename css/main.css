@@ -16,7 +16,6 @@
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  z-index: 1;
 }
 
 .demo .large-header {
@@ -813,25 +812,41 @@ Media Queries
   #welcome {
     min-height: 0;
   }
+
   .demo .main-title {
     color: white;
-    top: 35%;
+    top: 34%;
     font-size: 2.5em;
   }
 
   .subtitle {
     font-size: 1.6rem;
-    top: 51%;
+    top: 47%;
   }
 
   .intro-navigate-button {
     padding: 3%;
     font-size: 1.2rem;
-    background-color: rgba(167, 167, 167, 0.2)
+    background-color: rgba(167, 167, 167, 0.2);
+    top: 72%;
+    -webkit-animation: upsrcoll-mobile 2.5s 1;
+    animation: upsrcoll-mobile 2.5s 1;
   }
+
+  @-webkit-keyframes upsrcoll-mobile {
+    0% {top: 123%}
+    100% {top: 71.7%}
+  }
+  
+  @keyframes upsrcoll-mobile {
+    0% {top: 123%}
+    100% {top: 71.7%}
+  }
+  
 
   .sidebar {
     width: 55px;
+    -webkit-transform: translateZ(-1px);
   }
 
   section {

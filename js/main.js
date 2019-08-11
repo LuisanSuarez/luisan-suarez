@@ -34,11 +34,19 @@ function addDisclaimer(x) {
     disclaimer.classList.add("monkey-subtitle");
     disclaimer.innerHTML = "&nbsp&nbsp&nbsp(desktop only)";
 
-    var listMonkeySubtitle = document.getElementById("list-monkey-subtitle");
-    listMonkeySubtitle.appendChild(disclaimer)
+    var listMonkeyCard = document.getElementById("list-monkey-card");
+    listMonkeyCard.style.display = "none"
   }
+}
+
+function hideSidebariOS() {
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (iOS ) {
+        document.getElementById("welcome").style.transform = "translateZ(10px)"
+    }
 }
 
 var x = window.matchMedia("(max-width: 480px)")
 addDisclaimer(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+x.addListener(addDisclaimer) // Attach listener function on state changes
+hideSidebariOS()
