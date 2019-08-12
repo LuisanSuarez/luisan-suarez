@@ -27,3 +27,26 @@ function hide() {
     var element = document.getElementById("ready-button");
     element.style.display = "none";
 }
+
+function addDisclaimer(x) {
+  if (x.matches) { // If media query matches
+    var disclaimer = document.createElement('span');
+    disclaimer.classList.add("monkey-subtitle");
+    disclaimer.innerHTML = "&nbsp&nbsp&nbsp(desktop only)";
+
+    var listMonkeyCard = document.getElementById("list-monkey-card");
+    listMonkeyCard.style.display = "none"
+  }
+}
+
+function hideSidebariOS() {
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (iOS ) {
+        document.getElementById("welcome").style.transform = "translateZ(10px)"
+    }
+}
+
+var x = window.matchMedia("(max-width: 480px)")
+addDisclaimer(x) // Call listener function at run time
+x.addListener(addDisclaimer) // Attach listener function on state changes
+hideSidebariOS()
