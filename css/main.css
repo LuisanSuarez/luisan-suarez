@@ -942,6 +942,7 @@ Media Queries
     display: block;
     text-align: center;
     font-size: 2em;
+    height: 100%;
   }
 
   .boring-stuff .links {
@@ -949,10 +950,10 @@ Media Queries
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 0;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+    margin-top: -5%;
   }
 
   .boring-stuff .links a {
