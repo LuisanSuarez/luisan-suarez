@@ -644,7 +644,7 @@ Media Queries
   }
 
   .screenshots {
-    width: 34vw;
+    width: 35vw;
     height: auto;
     margin: 33px 0;
     -webkit-perspective: 1000px;
@@ -656,7 +656,7 @@ Media Queries
   /* This container is needed to position the front and back side */
   .screenshot-inner {
     position: relative;
-    width: 34vw;
+    width: 35vw;
     height: 19vw;
     text-align: center;
     -webkit-transition: -webkit-transform 0.8s;
@@ -707,8 +707,8 @@ Media Queries
   }
 
   .screenshot-back p {
-    font-size: 1.6vw;
-    width: 87%;
+    font-size: 1.5vw;
+    width: 92%;
     margin-left: auto;
     margin-right: auto;
   }
