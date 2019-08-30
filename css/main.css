@@ -377,8 +377,8 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 3%;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+  /* -webkit-perspective: 1000px;
+          perspective: 1000px; */
 }
 
 
@@ -1072,5 +1072,16 @@ html[xmlns] .clearfix {
 }
 
 .testing {
+  position: relative;
+}
+
+.screenshots, .screenshot-inner,
+.screenshot-front, .screenshots img {
+  /* z-index: inherit; */
+}
+
+#step2 {
+  width: 34vw;
+  height: 19vw;
   position: relative;
 }
