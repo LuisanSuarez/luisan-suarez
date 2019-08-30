@@ -2,6 +2,8 @@ function toggleSiderbarOpen() {
     var element = document.getElementById("sidebar");
     element.classList.toggle("open");
     var aboutText = document.getElementById("about-text");
+    aboutText.setAttribute("onclick","window.scrollTo(0,0)");
+
     var projectsText = document.getElementById("projects-text");
     var contactText = document.getElementById("links-text");
     var linksText = document.getElementById("contact-text");
@@ -26,6 +28,10 @@ function toggleSiderbarOpen() {
 function hide() {
     var element = document.getElementById("ready-button");
     element.style.display = "none";
+}
+
+function log() {
+    console.log("friends")
 }
 
 function addDisclaimer(x) {

@@ -30,8 +30,8 @@
   text-align: center;
   top: 47%;
   left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0) !important;
+  transform: translate3d(-50%, -50%, 0) !important;
   width: 90%;
 }
 
@@ -176,6 +176,8 @@ section {
   right: 20px;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
+  z-index: 10;
+  transform: translate3d(0, 0, 0);
 }
 
 .hamburger-icon:hover {
@@ -375,8 +377,8 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 3%;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+  /* -webkit-perspective: 1000px;
+          perspective: 1000px; */
 }
 
 
@@ -1041,4 +1043,59 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
   height: 0%;
+}
+
+/* *************** */
+/* ***Intro.js*** */
+/* ************* */
+
+#tour-button {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 10;
+  font-size: 18px;
+  opacity: 0.1;
+  -webkit-animation: breathe 2.5s 1;
+  animation: breathe 6s 1;
+}
+
+#tour-button:hover {
+  opacity: 0.8;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+
+
+@-webkit-keyframes breathe {
+  0% {opacity: 0.1}
+
+  40% {opacity: 0.1}
+  50% {opacity: 0.8}
+  60% {opacity: 0.1}
+  70% {opacity: 0.8}
+  80% {opacity: 0.1}
+  90% {opacity: 0.8}
+  100% {opacity: 0.1}
+}
+
+@keyframes breathe {
+  0% {opacity: 0.1}
+
+  40% {opacity: 0.1}
+  50% {opacity: 0.8}
+  60% {opacity: 0.1}
+  70% {opacity: 0.8}
+  80% {opacity: 0.1}
+  90% {opacity: 0.8}
+  100% {opacity: 0.1}
+}
+
+.introjs-tooltip, .introjs-floating {
+  color: black;
+}
+
+.screenshots.introjs-showElement.introjs-relativePosition {
+  background-color: black;
 }
