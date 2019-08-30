@@ -17,7 +17,7 @@
     width = window.innerWidth;
     // console.log("height:", height)
     height = height ? height : window.innerHeight
-    width > 480 ? "" : height *= 1.2;
+    width > 480 ? [] : height *= 1.2;
     // console.log("height 2:", height)
     target = { x: width / 2, y: height / 2 };
 

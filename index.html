@@ -16,11 +16,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css"></link>
-    <link rel="stylesheet" href="css/main.css" />
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-    <script src="./js/demo.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.js"></script>
+    <script src="./js/intro-walkthrough.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs.css" rel="stylesheet"></link>
     <script src="./js/main.js" async></script>
+    <script src="./js/demo.js" async></script>
     <script language="JavaScript">
       function testResults (form) {
           var TestVar = form.inputbox.value;
@@ -41,16 +44,24 @@
               <span class="thin">Luisan </span> Suarez
             </h1>
             <h2 class="subtitle">
-              <span class="thin">software</span> engineer
+              <span class="thin" >software</span> engineer
             </h2>
-            <a href="#projects" class="intro-navigate-button">here's what I've built</a>
+
+            <div class="testing">
+
+            <a href="#projects" class="intro-navigate-button" id="step1">here's what I've built</a>
+          
+          </div>
+          
           </div>
         </div>
       </div>
     </section>
+    <h2 style="z-index: 100; position: fixed; top: 10%; left: 3%;" onclick="console.log('111'); startIntro(); console.log('222');">Take a tour!</h2>
     <!-- <div style='clear:both;'></div> -->
-    <section class="sidebar" id="sidebar">
-      <div class="hamburger-icon" onclick="toggleSiderbarOpen()" ></div>
+  <div class="sidebar">
+    <section class="sidebar-temporary" id="sidebar">
+      <div class="hamburger-icon" onclick="toggleSiderbarOpen()" id="step4"></div>
       <div class="sidebar-navigation" >
         <div class="projects-navigate navigate" >
           <a href="#projects" class="projects-icon" title="my projects"></a>
@@ -64,8 +75,8 @@
           <a href="#about" class="about-icon" title="about me"></a>
           <a href="#about" id="about-text" class="navigate-text" style="display: none;">about me</a>
         </div>
-        <div class="contact-navigate navigate" >
-          <a href="#contact" class="contact-icon" title="get in touch!"></a>
+        <div class="contact-navigate navigate">
+          <a href="#contact" id="step5" class="contact-icon" title="get in touch!"></a>
           <a href="#contact" id="contact-text" class="navigate-text" style="display: none;">contact</a>
         </div>
         <div class="welcome-navigate navigate" >
@@ -74,6 +85,7 @@
         </div>
       </div>
     </section>
+  </div>
 
     <div class="parallax-1" ></div>
 
@@ -82,9 +94,9 @@
     <section id="projects" class="projects">
       <h1>Projects</h1>
       <div class="project-screenshots">
-
+        </span>
+        <span class="relative-position">
           <div id="list-monkey-card" class="screenshots" onclick="this.classList.toggle('hover')">
-
             <div class="screenshot-inner" >
               <div class="screenshot-front">
                 <img src="./img/projects/list-monkey.jpg" alt="Avatar" >
@@ -104,6 +116,8 @@
               </div>
             </div>
           </div>
+        </span>
+        <span class="relative-position">
 
           <div class="screenshots" onclick="this.classList.toggle('hover')">
             <div class="screenshot-inner">
@@ -128,16 +142,19 @@
               </div>
             </div>
           </div>
+        </span>
+        <span class="relative-position">
 
-          <div class="screenshots" onclick="this.classList.toggle('hover')">
-
-            <div class="screenshot-inner">
-              <div class="screenshot-front">
+          <div class="screenshots" onclick="this.classList.toggle('hover')" id="step2" >
+            <div class="screenshot-inner" >
+              <div class="screenshot-front" >
                 <img src="./img/projects/notes-app.png" alt="Avatar" >
               </div>
               <div class="screenshot-back">
                 <h1>
-                  <a href="https://luisan-notes.netlify.com/"
+                  <a
+                    id="step3"
+                    href="https://luisan-notes.netlify.com/"
                     onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')" >
                     Notes App
                   </a>
@@ -155,6 +172,8 @@
               </div>
             </div>
           </div>
+        </span>
+        <span class="relative-position">
 
           <div class="screenshots" onclick="this.classList.toggle('hover')">
 
@@ -180,6 +199,8 @@
               </div>
             </div>
           </div>
+        </span>
+        <span class="relative-position">
 
           <div class="screenshots" onclick="this.classList.toggle('hover')" >
 
@@ -203,7 +224,7 @@
               </div>
             </div>
           </div>
-
+        </span>
         <!-- <a target="_blank" href="https://www.listmonkey.net/">
           <img class="project-screehshot-front" src="./img/projects/list-monkey.jpg" alt="list monkey" />
         </a>
@@ -289,6 +310,7 @@
     </section>
 
     <footer></footer>
-    <script src="http://10.9.56.143:8081/target/target-script-min.js#anonymous"></script>
+    <!-- <script src="http://10.9.56.143:8081/target/target-script-min.js#anonymous"></script> -->
+
   </body>
 </html>

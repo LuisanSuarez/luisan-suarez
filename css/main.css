@@ -30,8 +30,8 @@
   text-align: center;
   top: 47%;
   left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0) !important;
+  transform: translate3d(-50%, -50%, 0) !important;
   width: 90%;
 }
 
@@ -176,6 +176,8 @@ section {
   right: 20px;
   -webkit-transition: all .15s ease;
   transition: all .15s ease;
+  z-index: 10;
+  transform: translate3d(0, 0, 0);
 }
 
 .hamburger-icon:hover {
@@ -388,6 +390,7 @@ section {
   -webkit-perspective: 1000px;
           perspective: 1000px; /* Remove this if you don't want the 3D effect */
   text-decoration: none;
+  position: absolute;
 }
 
 .screenshots img {
@@ -1041,4 +1044,33 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
   height: 0%;
+}
+
+/* *************** */
+/* ***Intro.js*** */
+/* ************* */
+
+.introjs-tooltip, .introjs-floating {
+  color: black;
+}
+
+.introjs-tooltip, .introjs-floating {
+
+}
+
+.relative-position {
+  position: relative;
+  width: 34vw;
+  margin: 33px 0;
+  height: 19vw;
+}
+
+.sidebar-temporary {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.testing {
+  position: relative;
 }
