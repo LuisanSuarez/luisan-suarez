@@ -1049,6 +1049,49 @@ html[xmlns] .clearfix {
 /* ***Intro.js*** */
 /* ************* */
 
+#tour-button {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 10;
+  font-size: 18px;
+  opacity: 0.1;
+  -webkit-animation: breathe 2.5s 1;
+  animation: breathe 6s 1;
+}
+
+#tour-button:hover {
+  opacity: 0.8;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+
+
+@-webkit-keyframes breathe {
+  0% {opacity: 0.1}
+
+  40% {opacity: 0.1}
+  50% {opacity: 0.8}
+  60% {opacity: 0.1}
+  70% {opacity: 0.8}
+  80% {opacity: 0.1}
+  90% {opacity: 0.8}
+  100% {opacity: 0.1}
+}
+
+@keyframes breathe {
+  0% {opacity: 0.1}
+
+  40% {opacity: 0.1}
+  50% {opacity: 0.8}
+  60% {opacity: 0.1}
+  70% {opacity: 0.8}
+  80% {opacity: 0.1}
+  90% {opacity: 0.8}
+  100% {opacity: 0.1}
+}
+
 .introjs-tooltip, .introjs-floating {
   color: black;
 }
