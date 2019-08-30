@@ -31,9 +31,7 @@
       }
       </script>
   </head>
-  <!-- &nbsp; -->
   <body>
-
 
     <section id="welcome" class="welcome clearfix">
       <div class="container demo">
@@ -46,62 +44,62 @@
             <h2 class="subtitle">
               <span class="thin" >software</span> engineer
             </h2>
-
-            <div class="testing">
-
             <a href="#projects" class="intro-navigate-button" id="step1">here's what I've built</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <h2 style="z-index: 100; position: fixed; top: 10%; left: 3%;" onclick="startIntro();">Take a tour!</h2>
+
+    <!-- <div style='clear:both;'></div> -->
+    <div class="sidebar">
+      <section class="sidebar" id="sidebar">
+        <div class="hamburger-icon" onclick="toggleSiderbarOpen()" id="step5"></div>
+        <div class="sidebar-navigation" >
+          <div class="projects-navigate navigate" >
+            <a href="#projects" class="projects-icon" title="my projects"></a>
+            <a href="#projects" id="projects-text" class="navigate-text" style="display: none;">projects</a>
+          </div>
+          <div class="boring-stuff-navigate navigate" >
+            <a href="#boring-stuff" class="links-icon" title="links to formal stuff"></a>
+            <a href="#boring-stuff" id="links-text" class="navigate-text" style="display: none;">links</a>
+          </div>
+          <div class="about-navigate navigate" >
+            <a href="#about" class="about-icon" title="about me"></a>
+            <a href="#about" id="about-text" class="navigate-text" style="display: none;">about me</a>
+          </div>
+          <div class="contact-navigate navigate">
+            <a href="#contact" id="step6" class="contact-icon" title="get in touch!"></a>
+            <a href="#contact" id="contact-text" class="navigate-text" style="display: none;">contact</a>
+          </div>
+          <div class="welcome-navigate navigate" >
+            <a href="#welcome" class="welcome-icon" title="awesome welcome animation"></a>
+            <a href="#welcome" id="welcome-text" class="navigate-text" style="display: none;">back to top</a>
           </div>
         </div>
-      </div>
-    </section>
-    <h2 style="z-index: 100; position: fixed; top: 10%; left: 3%;" onclick="console.log('111'); startIntro(); console.log('222');">Take a tour!</h2>
-    
-    <!-- <div style='clear:both;'></div> -->
-  <div class="sidebar">
-    <section class="sidebar-temporary" id="sidebar">
-      <div class="hamburger-icon" onclick="toggleSiderbarOpen()" id="step5"></div>
-      <div class="sidebar-navigation" >
-        <div class="projects-navigate navigate" >
-          <a href="#projects" class="projects-icon" title="my projects"></a>
-          <a href="#projects" id="projects-text" class="navigate-text" style="display: none;">projects</a>
-        </div>
-        <div class="boring-stuff-navigate navigate" >
-          <a href="#boring-stuff" class="links-icon" title="links to formal stuff"></a>
-          <a href="#boring-stuff" id="links-text" class="navigate-text" style="display: none;">links</a>
-        </div>
-        <div class="about-navigate navigate" >
-          <a href="#about" class="about-icon" title="about me"></a>
-          <a href="#about" id="about-text" class="navigate-text" style="display: none;">about me</a>
-        </div>
-        <div class="contact-navigate navigate">
-          <a href="#contact" id="step6" class="contact-icon" title="get in touch!"></a>
-          <a href="#contact" id="contact-text" class="navigate-text" style="display: none;">contact</a>
-        </div>
-        <div class="welcome-navigate navigate" >
-          <a href="#welcome" class="welcome-icon" title="awesome welcome animation"></a>
-          <a href="#welcome" id="welcome-text" class="navigate-text" style="display: none;">back to top</a>
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
     <div class="parallax-1" ></div>
 
-    <!-- <a href="#contact" id="ready-button" class="ready-button" onclick="hide()" >like what you see?</a> -->
-  <a href="www.youtube.com" id="step4">Here is 4 right here</a>
     <section id="projects" class="projects">
       <h1>Projects</h1>
       <div class="project-screenshots">
-        <span class="relative-position">
+
           <div id="list-monkey-card" class="screenshots" onclick="this.classList.toggle('hover')" >
             <div class="screenshot-inner" >
               <div class="screenshot-front">
                 <img src="./img/projects/list-monkey.jpg" alt="Avatar" >
               </div>
               <div class="screenshot-back">
-                <h1><a href="https://www.listmonkey.net/" onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')" >List Monkey</a></h1> 
-                <h3 id="list-monkey-subtitle">Capstone Project</h3> 
+                <h1>
+                  <a href="https://www.listmonkey.net/"
+                     target="_blank"
+                     onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')" >List Monkey
+                  </a>
+                </h1>
+                <h3 id="list-monkey-subtitle">Capstone Project</h3>
                 <p>Create groups, add friends, and assign them tasks to keep track of responsibilities</p>
                 <div class="tech-stack">
                   <img src="./img/technologies/react.png" alt="javascript"/>
@@ -114,8 +112,6 @@
               </div>
             </div>
           </div>
-        </span>
-        <span class="relative-position">
 
           <div class="screenshots" onclick="this.classList.toggle('hover')">
             <div class="screenshot-inner">
@@ -124,12 +120,13 @@
               </div>
               <div class="screenshot-back">
                 <h1>
-                  <a href="https://luisan-lambda-times.netlify.com/" 
+                  <a href="https://luisan-lambda-times.netlify.com/"
+                    target="_blank"
                     onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')" >
                     Lambda Times
                   </a>
-                </h1> 
-                <h3>React Module</h3> 
+                </h1>
+                <h3>React Module</h3>
                 <p>SPA news site. Filter by topic. Get SF's updated weather data</p>
                 <div class="tech-stack">
                   <img src="./img/technologies/react.png" alt="javascript"/>
@@ -140,8 +137,6 @@
               </div>
             </div>
           </div>
-        </span>
-        <span class="relative-position">
 
           <div class="screenshots" onclick="this.classList.toggle('hover')" id="step2" >
             <div class="screenshot-inner" >
@@ -150,9 +145,8 @@
               </div>
               <div class="screenshot-back">
                 <h1>
-                  <a
-                    
-                    href="https://luisan-notes.netlify.com/"
+                  <a href="https://luisan-notes.netlify.com/"
+                    target="_blank"
                     onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')" >
                     Notes App
                   </a>
@@ -170,11 +164,8 @@
               </div>
             </div>
           </div>
-        </span>
-        <span class="relative-position">
 
           <div class="screenshots" onclick="this.classList.toggle('hover')">
-
             <div class="screenshot-inner">
               <div class="screenshot-front">
                 <img src="./img/projects/s&j-architects.jpg" alt="Avatar" >
@@ -182,6 +173,7 @@
               <div class="screenshot-back">
                 <h1>
                   <a href="https://luisansuarez.github.io/S-J-Architects"
+                    target="_blank"
                     onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')">
                     S&J Architects
                   </a>
@@ -197,18 +189,16 @@
               </div>
             </div>
           </div>
-        </span>
-        <span class="relative-position">
 
           <div class="screenshots" onclick="this.classList.toggle('hover')" >
-
             <div class="screenshot-inner">
               <div class="screenshot-front">
                 <img src="./img/projects/todos.jpg" alt="Avatar" >
               </div>
               <div class="screenshot-back">
                 <h1>
-                  <a href="https://redux-todo-luisan.netlify.com/" 
+                  <a href="https://redux-todo-luisan.netlify.com/"
+                    target="_blank"
                     onclick="this.parentElement.parentElement.parentElement.parentElement.classList.toggle('hover')">
                     Todos
                   </a>
@@ -222,7 +212,6 @@
               </div>
             </div>
           </div>
-        </span>
         <!-- <a target="_blank" href="https://www.listmonkey.net/">
           <img class="project-screehshot-front" src="./img/projects/list-monkey.jpg" alt="list monkey" />
         </a>

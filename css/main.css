@@ -390,7 +390,6 @@ section {
   -webkit-perspective: 1000px;
           perspective: 1000px; /* Remove this if you don't want the 3D effect */
   text-decoration: none;
-  position: absolute;
 }
 
 .screenshots img {
@@ -1052,36 +1051,4 @@ html[xmlns] .clearfix {
 
 .introjs-tooltip, .introjs-floating {
   color: black;
-}
-
-.introjs-tooltip, .introjs-floating {
-
-}
-
-.relative-position {
-  position: relative;
-  width: 34vw;
-  margin: 33px 0;
-  height: 19vw;
-}
-
-.sidebar-temporary {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.testing {
-  position: relative;
-}
-
-.screenshots, .screenshot-inner,
-.screenshot-front, .screenshots img {
-  /* z-index: inherit; */
-}
-
-#step2 {
-  width: 34vw;
-  height: 19vw;
-  position: relative;
 }
