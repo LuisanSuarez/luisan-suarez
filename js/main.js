@@ -30,18 +30,12 @@ function hide() {
     element.style.display = "none";
 }
 
-function log() {
-    console.log("friends")
-}
-
-function addDisclaimer(x) {
+function adaptToMobile(x) {
   if (x.matches) { // If media query matches
-    var disclaimer = document.createElement('span');
-    disclaimer.classList.add("monkey-subtitle");
-    disclaimer.innerHTML = "&nbsp&nbsp&nbsp(desktop only)";
-
     var listMonkeyCard = document.getElementById("list-monkey-card");
-    listMonkeyCard.style.display = "none"
+    listMonkeyCard.style.display = "none";
+    var tourButton = document.getElementById("tour-button");
+    tourButton.style.display = "none";
   }
 }
 
@@ -53,6 +47,6 @@ function hideSidebariOS() {
 }
 
 var x = window.matchMedia("(max-width: 480px)")
-addDisclaimer(x) // Call listener function at run time
-x.addListener(addDisclaimer) // Attach listener function on state changes
+adaptToMobile(x) // Call listener function at run time
+x.addListener(adaptToMobile) // Attach listener function on state changes
 hideSidebariOS()
