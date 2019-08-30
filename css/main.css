@@ -1052,3 +1052,7 @@ html[xmlns] .clearfix {
 .introjs-tooltip, .introjs-floating {
   color: black;
 }
+
+.screenshots.introjs-showElement.introjs-relativePosition {
+  background-color: black;
+}
